@@ -1,0 +1,19 @@
+{
+  "name": "acoustic-earth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "fetch-audio": "python3 scripts/fetch_wildlife_audio.py --limit 100 --output-dir public/audio",
+    "fetch-inaturalist-audio": "python3 scripts/fetch_inaturalist_audio.py --limit 100 --output-dir public/audio"
+  },
+  "devDependencies": {
+    "vite": "^8.1.1"
+  },
+  "dependencies": {
+    "three": "^0.185.1"
+  }
+}
